@@ -1,3 +1,6 @@
 # ignore tmp files
 
 tmp/*
+
+# examples while testing
+dwca-endeostigs
