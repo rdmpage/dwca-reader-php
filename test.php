@@ -9,6 +9,8 @@ require_once('dwca.php');
 // Archive to parse
 $basedir = 'dwca-megachile_chomskyi/';
 
+$basedir = 'dwca-endeostigs/';
+
 // meta.xml tells us how to interpret archive
 $filename = $basedir . 'meta.xml';
 $xml = file_get_contents($filename);
