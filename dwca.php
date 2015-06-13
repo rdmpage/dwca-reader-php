@@ -30,13 +30,13 @@ function data_display($data)
 {
 	if (isset($data->_id))
 	{
-		$filename = 'tmp/' . $data->_id . '.json';
+		$filename = 'tmp/' . urlencode($data->_id) . '.json';
 		file_put_contents($filename, json_format(json_encode($data)) );
 	}
 	else
 	{
 		// extension
-		$filename = 'tmp/' . $data->_coreid . '.json';
+		$filename = 'tmp/' . urlencode($data->_coreid) . '.json';
 		if (file_exists($filename))
 		{
 		
